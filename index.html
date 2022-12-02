@@ -12,8 +12,14 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1></h1>
+    <img src="./images/flavio_face.png" width="100px" alt="Flavio">
+    <h1>Flavio Oliveira</h1>
     <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -28,16 +34,87 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
+      <div class="about-text">
+        <p>
+          I'm Flavio, a Web developer that focuses on listening and understanding the client's needs. My job is to transform the project's and ideas into real web applications. I'm continuously improving my web development skills on HTML, CSS and JavaScript.
+        </p>
+        <p>
+          I speak Portuguese, English, and Spanish at the lower level.
+        </p>
+        <p>
+          I consider the most substantial skill of mine "fast adaptation." I could confirm it in the last eight years, moving country, changing the job, and adapting well in diverse environments.
+        </p>
+
+      </div>
+      <img src="./images/flavio_pc.PNG" alt="Flavio on PC">
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+      <div class="works-container">
+        <div class="work-card-1">
+          <h3 class="title">
+            Work 1
+          </h3>
+          <img src="./images/02-portfolio-1.jpg" alt="" width="300px">
+        </div>
+        <div class="work-card-2">
+          <h3 class="title">
+            Work 2
+          </h3>
+          <img src="./images/02-portfolio-2.jpg" alt="" width="300px">
+        </div>
+        <div class="work-card-3">
+          <h3 class="title">
+            Work 3
+          </h3>
+          <img src="./images/02-portfolio-3.jpg" alt="" width="300px">
+        </div>
+        <div class="work-card-4">
+          <h3 class="title">
+            Work 4
+          </h3>
+          <img src="./images/02-portfolio-4.jpg" alt="" width="300px">
+        </div>
+      </div>
+
     </section>
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <form action="https://getform.io/f/04feb2e1-24e2-4e73-98b3-837225c11041" method="POST">
+        <div class="contactForm">
+          <div class="row">
+            <div class="col50">
+              <input type="text" name="first_name" placeholder="First Name" />
+            </div>
+            <div class="col50">
+              <input type="text" name="last_name" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col50">
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="col50">
+              <input type="text" name="subject" placeholder="Subject" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col100">
+              <textarea name="message" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <button>
+              <input type="submit" value="Send" />
+            </button>
+
+          </div>
+        </div>
+      </form>
     </section>
   </main>
 </body>

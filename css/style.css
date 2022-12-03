@@ -2,8 +2,12 @@
 /* HEADER */
 header{
   display: flex;
-  width: calc(100% - 200px);
+  max-width: 1280px;
   margin: 0 auto;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 2%;
 }
 header img{
   width: 70px;
@@ -21,7 +25,7 @@ header h1 {
 }
 header nav {
   position: fixed;
-  right: 0;
+  right: 5%;
   align-self: center;
   margin-left: auto;
 }
@@ -38,13 +42,19 @@ a {
 
 /* HERO BANNER */
 .hero-banner{
+  margin: 0 auto;
   min-height: 100vh;
-  background-color: green;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+/*TODO: delete border  */
+  border: 1px solid yellow;
 }
 
 /* ABOUT */
 .page-section{
   min-height:100vh ;
+/*TODO: delete border  */
   border: 1px solid yellow;
 }
 

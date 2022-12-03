@@ -24,6 +24,7 @@
     <h1>Flavio Oliveira</h1>
     <nav>
       <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -32,10 +33,43 @@
   </header>
 
   <!-- hero banner -->
-  <section class="hero-banner">
-    <div>
-      <h2>Cool subtitle here!</h2>
+  <section class="hero-banner" id="home">
+
+    <!-- ANIMATION  -->
+    <div class="particles">
+      <canvas class="scene" id="canvas-scene"></canvas>
     </div>
+
+    <div class="hero-container">
+      <div class="text-box">
+        <h3>
+        <span>Hello</span>, I'm 
+        </h3>
+        <h2>Flavio Oliveira</h2>
+        <h4>A developer with a versatile coding skillset.</h4>
+        <p>
+          I can help you get off scratch, projects as startups, portfolio pages, prototypes ideas, or create a web application for your business.
+        </p>
+        <a class="btn" href="#work">
+          Take a Look
+        </a>
+      </div>
+
+      <ul class="social-media">
+        <li>
+          <a href="htps://twitter.com/fl4viooliveira">
+            <img src="./images/twitter.svg" alt="twitter" target="_blank" width="40">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/fl4viooliveira/">
+            <img src="./images/linkedin.svg" alt="linkedin" target="_blank" width="40">
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
   </section>
 
   <main class="page-wrapper">
@@ -127,6 +161,9 @@
 <footer>
   Copyright © 2022 Flavio Oliveira.
 </footer>
+
+<!-- JAVASCRIPT  -->
+<script src="./js/scene.js"></script>
 </body>
 
 </html>

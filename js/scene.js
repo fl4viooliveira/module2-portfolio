@@ -72,6 +72,13 @@ class Particle {
         this.y -= 10;
       }
     }
+
+    // mouse particle
+    this.x += this.directionX;
+    this.y += this.directionY;
+
+    // draw particles
+    this.draw();
   }
 }
 

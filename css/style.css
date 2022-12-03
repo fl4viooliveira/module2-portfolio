@@ -47,8 +47,17 @@ a {
   margin: 0 auto;
   display: flex;
   align-items: center;
-/*TODO: delete border  */
-  border: 1px solid yellow;
+  position: relative;
+}
+
+/* ANIMATION */
+.particles .scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
 
 /* ABOUT */

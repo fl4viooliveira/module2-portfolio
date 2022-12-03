@@ -1,3 +1,60 @@
+
+/* HEADER */
 header{
   display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  top: 2%;
 }
+header img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: var(--light);
+  display: inline-block;
+  vertical-align: middle;
+}
+header h1 {
+  align-self: center;
+  margin:0 10px;
+  font-size: var(--fs-1);
+}
+header nav {
+  position: fixed;
+  right: 5%;
+  align-self: center;
+  margin-left: auto;
+}
+header nav ul {
+  display: flex;
+}
+li {
+  margin: 10px;
+  cursor: pointer;
+}
+a {
+  color: var(--light);
+}
+
+/* HERO BANNER */
+.hero-banner{
+  margin: 0 auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+/*TODO: delete border  */
+  border: 1px solid yellow;
+}
+
+/* ABOUT */
+.page-section{
+  min-height:100vh ;
+/*TODO: delete border  */
+  border: 1px solid yellow;
+}
+

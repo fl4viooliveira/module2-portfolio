@@ -109,6 +109,47 @@ a {
   color: var(--light)
 }
 
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+.social-media li {
+  margin: 15px 10px;
+  cursor: pointer;
+}
+
+.twitter {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/twitter.svg);
+  filter: invert(1);
+  opacity: 0.5;
+  scale: 0.8;
+  transition: 0.3s;
+}
+.twitter:hover{
+  opacity: 1;
+  scale: 1;
+}
+.linkedin {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/linkedin.svg);
+  filter: invert(1);
+  opacity: 0.5;
+  scale: 0.8;
+  transition: 0.3s;
+}
+.linkedin:hover{
+  opacity: 1;
+  scale: 1;
+}
+
+
 
 /* ABOUT */
 .page-section{

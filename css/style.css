@@ -64,11 +64,17 @@ a {
 /* HERO CONTAINER */
 .hero-container{
   background-color: #ffffff30;
-  padding: 25px;
   position: absolute;
   width: calc(100% / 3);
-  height: 60%;
+  height: fit-content;
   left: 5%;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+
 }
 .text-box h3 {
   font-size: var(--fs-1);
@@ -113,6 +119,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding: 0 15px;
   
 }
 .social-media li {

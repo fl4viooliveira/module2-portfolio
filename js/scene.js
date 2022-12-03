@@ -40,7 +40,7 @@ class Particle {
   draw() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-    ctx.fillStyle = "#bc5523";
+    ctx.fillStyle = "#F5D042";
     ctx.fill();
   }
 
@@ -116,7 +116,7 @@ function init() {
     let y = Math.random() * (innerHeight - size * 2 - size * 2) + size * 2;
     let directionX = Math.random() * 5 - 2.5;
     let directionY = Math.random() * 5 - 2.5;
-    let color = "#8C5523";
+    let color = "#F5D042";
 
     particlesArray.push(
       new Particle(x, y, directionX, directionY, size, color)
@@ -140,6 +140,12 @@ window.addEventListener("resize", function () {
   canvas.width = this.innerWidth;
   canvas.height = this.innerHeight;
   mouse.radius = (canvas.height / 80) * (canvas.height / 80);
+});
+
+// mouse out event
+window.addEventListener("mouseout", function () {
+  mouse.x = undefined;
+  mouse.y = undefined;
 });
 
 init();

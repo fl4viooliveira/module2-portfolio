@@ -47,8 +47,6 @@ a {
   margin: 0 auto;
   display: flex;
   align-items: center;
-/*TODO: delete border  */
-  border: 1px solid yellow;
   position: relative;
 }
 

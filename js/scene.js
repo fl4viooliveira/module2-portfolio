@@ -135,5 +135,12 @@ function animate() {
   connect();
 }
 
+// resize event
+window.addEventListener("resize", function () {
+  canvas.width = this.innerWidth;
+  canvas.height = this.innerHeight;
+  mouse.radius = (canvas.height / 80) * (canvas.height / 80);
+});
+
 init();
 animate();

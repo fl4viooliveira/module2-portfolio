@@ -82,4 +82,25 @@ class Particle {
   }
 }
 
-console.log(Particle, mouse, canvas, ctx);
+// draw line connecting close particles
+function connect() {
+  let opacityValue = 1;
+  for (let a = 0; a < particlesArray.length; a++) {
+    for (let b = a; b < particlesArray.length; b++) {
+      let distance =
+        (particlesArray[a].x - particlesArray[b].x) *
+          (particlesArray[a].x - particlesArray[b].x) +
+        (particlesArray[a].y - particlesArray[b].y) *
+          (particlesArray[a].y - particlesArray[b].y);
+      if (distance < (canvas.width / 7) * (canvas.height / 7)) {
+        opacityValue = 1 - distance / 20000;
+        ctx.strokeStyle = "rgba(140,85,31," + opacityValue + ")";
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
+        ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
+        ctx.stroke();
+      }
+    }
+  }
+}

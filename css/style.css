@@ -441,6 +441,21 @@ footer{
   ;
 }
 
+/* ABOUT */
+.about-box {
+  flex-direction: column;
+}
+.about-box p {
+  font-size: var(--fs-8);
+
+}
+.about-text{
+  max-width: 100%;
+}
+.about-box img {
+  width: 80%;
+  margin: 0 auto;
+}
 /* CONTACT */
 .contact-form {
   width: 70vw;
@@ -460,19 +475,4 @@ footer{
 
 /* HERO CONTAINER */
 @media (max-width: 400px){
-/* ABOUT */
-.about-box {
-  flex-direction: column;
-}
-.about-box p {
-  font-size: var(--fs-8);
-
-}
-.about-text{
-  max-width: 100%;
-}
-.about-box img {
-  width: 80%;
-  margin: 0 auto;
-}
 }

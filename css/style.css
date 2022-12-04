@@ -156,12 +156,67 @@ a {
   scale: 1;
 }
 
-
-
 /* ABOUT */
 .page-section{
   min-height:100vh ;
 /*TODO: delete border  */
   border: 1px solid yellow;
+  overflow: hidden;
+  position: relative;
+}
+
+/* WORK */
+
+.works-container {
+  display: grid;
+  padding: 0 5%;
+  height: 80vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+    "work-card-1 work-card-1 work-card-1"
+    "work-card-2 work-card-2 work-card-3"
+    "work-card-4 work-card-4 work-card-3"
+  ;
+  position: absolute;
+  top: 5%;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.work-card-1{
+  grid-area: work-card-1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.work-card-2{
+  grid-area: work-card-2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.work-card-3{
+  grid-area: work-card-3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.work-card-4{
+  grid-area: work-card-4;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: var(--fs-2);
+  color: var(--main-color)
 }
 

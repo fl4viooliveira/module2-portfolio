@@ -144,38 +144,41 @@
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section" id="contact">
       <h2>Contact Me</h2>
-      <form action="https://getform.io/f/04feb2e1-24e2-4e73-98b3-837225c11041" method="POST">
-        <div class="contactForm">
-          <div class="row">
-            <div class="col50">
-              <input type="text" name="first_name" placeholder="First Name" />
+      <div class="contact-box">
+        <form action="https://getform.io/f/04feb2e1-24e2-4e73-98b3-837225c11041" method="POST">
+          <div class="contact-form">
+            <div class="row">
+              <div class="col-50">
+                <input type="text" name="first_name" placeholder="First Name" />
+              </div>
+              <div class="col-50">
+                <input type="text" name="last_name" placeholder="Last Name" />
+              </div>
             </div>
-            <div class="col50">
-              <input type="text" name="last_name" placeholder="Last Name" />
+            <div class="row">
+              <div class="col-50">
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+              <div class="col-50">
+                <input type="text" name="subject" placeholder="Subject" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-100">
+                <textarea name="message" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <button>
+                <input type="submit" value="Send" />
+              </button>
             </div>
           </div>
-          <div class="row">
-            <div class="col50">
-              <input type="email" name="email" placeholder="Email" />
-            </div>
-            <div class="col50">
-              <input type="text" name="subject" placeholder="Subject" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col100">
-              <textarea name="message" placeholder="Message"></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <button>
-              <input type="submit" value="Send" />
-            </button>
-          </div>
-        </div>
-      </form>
+        </form>
+
+      </div>
     </section>
   </main>
 <footer>

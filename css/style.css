@@ -262,3 +262,70 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
+/* CONTACT */
+.contact-box {
+  width: 100%;
+  height: 100%;
+  margin: 90px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+}
+
+.contact-form{
+  width: 700px;
+  margin-top: 30px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+}
+.row{
+  width: 100%;
+  display: flex;
+}
+.col-50{
+  width: 50%;
+  margin: 10px;
+}
+.col-100{
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+.row input, .row textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: var(--light);
+  font-size: var(--fs-4);
+  resize: none;
+}
+.row textarea {
+  height: 100px;
+}
+.row button {
+  margin: 0 auto;
+  border: none;
+}
+.row input[type="submit"]{
+  background-color: var(--light);
+  color: var(--middle-light);
+  padding: 10px 30px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 150px;
+  scale: 1;
+  transition: 0.2s ease-in;
+}
+
+.row input[type="submit"]:hover{
+  scale: 1.2;
+
+}

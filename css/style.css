@@ -2,7 +2,6 @@
 /* HEADER */
 header{
   display: flex;
-  /* max-width: 1280px; */
   margin: 0 auto;
   position: absolute;
   left: 5%;
@@ -355,37 +354,76 @@ footer{
 
 /* HERO CONTAINER */
 @media (max-width: 900px){
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  header h1 {
+    font-size: var(--fs-3);
+  }
+
   .hero-container{
     position: relative;
     width: 100%;
     height: 75vh;
-    margin: 15% 5%;
+    margin: 10% 5%;
     left: 0;
+    padding: 5px;
+    overflow: hidden;
   }
   .text-box {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
+    padding: 8px;
+  }
+  .text-box h3 {
+    font-size: var(--fs-3);
+  }
+  .text-box h2 {
+    font-size: var(--fs-3);
+    margin: 8px 0;
+  }
+  .text-box h4 {
+    font-size: var(--fs-4);
+  }
+  .text-box p {
+    font-size: var(--fs-6);
   }
 
 /* ABOUT */
 .about-box {
-  flex-direction: column;
+  /* flex-direction: column; */
+  padding: 5px;
 }
 .about-text{
-  max-width: 100%;
+  max-width: 70%;
+}
+.about-text p {
+  font-size: var(--fs-6);
 }
 .about-box img {
+  width: 30%;
   margin: 0 auto;
+  padding: 8px;
 }
 
 /* WORK */
 .works-container{
+  padding: 8px 5%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
   "work-card-1 work-card-2"
   "work-card-3 work-card-4"
   ;
+}
+
+/* CONTACT */
+.contact-box{
+  margin-top: 8px;
+}
+.contact-form{
+  margin-top: 8px;
 }
 
 }
@@ -404,8 +442,6 @@ footer{
 }
 
 /* CONTACT */
-.contact-box{
-}
 .contact-form {
   width: 70vw;
 }
@@ -424,4 +460,19 @@ footer{
 
 /* HERO CONTAINER */
 @media (max-width: 400px){
+/* ABOUT */
+.about-box {
+  flex-direction: column;
+}
+.about-box p {
+  font-size: var(--fs-8);
+
+}
+.about-text{
+  max-width: 100%;
+}
+.about-box img {
+  width: 80%;
+  margin: 0 auto;
+}
 }

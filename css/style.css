@@ -155,8 +155,6 @@ a {
   opacity: 1;
   scale: 1;
 }
-
-/* ABOUT */
 .page-section{
   min-height:100vh ;
 /*TODO: delete border  */
@@ -167,7 +165,29 @@ a {
 .page-section h2 {
   margin: 25px;
   text-align: center;
+}
 
+/* ABOUT */
+.about-box {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.about-text{
+  max-width: 50%;
+  padding: 20px;
+}
+.about-text p {
+  font-size: var(--fs-3);
+  text-justify: inter-word;
+}
+.about-box img {
+  width: 50%;
+  height: fit-content;
+  padding: 20px;
 }
 
 /* WORK */

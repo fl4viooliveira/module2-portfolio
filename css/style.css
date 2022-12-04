@@ -365,9 +365,18 @@ footer{
   .text-box {
     position: absolute;
     bottom: 10%;
-    
-
   }
+
+/* ABOUT */
+.about-box {
+  flex-direction: column;
+}
+.about-text{
+  max-width: 100%;
+}
+.about-box img {
+  margin: 0 auto;
+}
 }
 
 /* 400px Responsive */

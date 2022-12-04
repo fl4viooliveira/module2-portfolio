@@ -65,9 +65,10 @@ a {
 .hero-container{
   background-color: #ffffff30;
   position: absolute;
-  width: calc(100% / 3);
+  width: 40%;
   height: fit-content;
   left: 5%;
+  bottom: 10%;
 }
 .text-box {
   display: flex;
@@ -348,4 +349,79 @@ a {
 footer{
   text-align: center;
   margin: 20px;
+}
+
+/* 900px Responsive */
+
+/* HERO CONTAINER */
+@media (max-width: 900px){
+  .hero-container{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    margin: 15% 5%;
+    left: 0;
+  }
+  .text-box {
+    position: absolute;
+    bottom: 10%;
+  }
+
+/* ABOUT */
+.about-box {
+  flex-direction: column;
+}
+.about-text{
+  max-width: 100%;
+}
+.about-box img {
+  margin: 0 auto;
+}
+
+/* WORK */
+.works-container{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "work-card-1 work-card-2"
+  "work-card-3 work-card-4"
+  ;
+}
+
+}
+/* 750px Responsive */
+/* WORK */
+@media (max-width: 750px){
+.works-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "work-card-1"
+  "work-card-2"
+  "work-card-3" 
+  "work-card-4"
+  ;
+}
+
+/* CONTACT */
+.contact-box{
+}
+.contact-form {
+  width: 70vw;
+}
+.row {
+  flex-direction: column;
+}
+.col-50{
+  width: 100%;
+}
+.row textarea {
+  height: 200px;
+}
+}
+
+/* 400px Responsive */
+
+/* HERO CONTAINER */
+@media (max-width: 400px){
 }

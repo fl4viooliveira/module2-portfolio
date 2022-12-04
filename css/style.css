@@ -191,8 +191,9 @@ a {
 /* WORK */
 
 .works-container {
+  width: 100%;
   display: grid;
-  padding: 0 5%;
+  padding: 15px 5%;
   height: 80vh;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -213,6 +214,10 @@ a {
   height: 100%;
   overflow: hidden;
   position: relative;
+  border-radius: 12px;
+  box-shadow: -3px -3px 8px var(--light);
+  background-image: url(../images/portifolio-1.png);
+  background-size: cover;
 }
 .work-card-2{
   grid-area: work-card-2;
@@ -220,6 +225,10 @@ a {
   height: 100%;
   overflow: hidden;
   position: relative;
+  border-radius: 12px;
+  box-shadow: -3px -3px 8px var(--light);
+  background-image: url(../images/portifolio-2.png);
+  background-size: cover;
 }
 .work-card-3{
   grid-area: work-card-3;
@@ -227,6 +236,10 @@ a {
   height: 100%;
   overflow: hidden;
   position: relative;
+  border-radius: 12px;
+  box-shadow: -3px -3px 8px var(--light);
+  background-image: url(../images/portifolio-3.png);
+  background-size: cover;
 }
 .work-card-4{
   grid-area: work-card-4;
@@ -234,6 +247,10 @@ a {
   height: 100%;
   overflow: hidden;
   position: relative;
+  border-radius: 12px;
+  box-shadow: -3px -3px 8px var(--light);
+  background-image: url(../images/portifolio-4.png);
+  background-size: cover;
 }
 .title {
   position: absolute;

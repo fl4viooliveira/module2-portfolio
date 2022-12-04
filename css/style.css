@@ -390,8 +390,7 @@ footer{
 
 }
 /* 750px Responsive */
-
-/* HERO CONTAINER */
+/* WORK */
 @media (max-width: 750px){
 .works-container{
   grid-template-columns: 1fr;
@@ -402,6 +401,22 @@ footer{
   "work-card-3" 
   "work-card-4"
   ;
+}
+
+/* CONTACT */
+.contact-box{
+}
+.contact-form {
+  width: 70vw;
+}
+.row {
+  flex-direction: column;
+}
+.col-50{
+  width: 100%;
+}
+.row textarea {
+  height: 200px;
 }
 }
 

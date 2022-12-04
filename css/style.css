@@ -41,13 +41,12 @@ header nav ul li {
 }
 a {
   color: var(--light);
-  color: var(--dark);
 }
 
 /* BURGER MENU */
 .wrapper-menu {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -95,7 +94,7 @@ a {
 }
 .active{
   display: flex;
-  background-color: white;
+  background-color: var(--main-color);
   flex-direction: column;
   position: absolute;
   right: 5%;
@@ -103,14 +102,18 @@ a {
   width: 400px; 
   align-items: center;
   justify-content: center;
-  transition: 3s ease-in;
+  transition: 0.3s ease-in;
+  opacity: 0.9;
 }
 .menu-box li {
-  background-color: green;
   margin: 40px;
 }
 .menu-box li a{
   font-size: var(--fs-1);
+  font-weight: 800;
+}
+.menu-box li a:hover{
+  font-size: 1.7rem;
 }
 
 

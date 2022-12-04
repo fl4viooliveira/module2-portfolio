@@ -377,6 +377,32 @@ footer{
 .about-box img {
   margin: 0 auto;
 }
+
+/* WORK */
+.works-container{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "work-card-1 work-card-2"
+  "work-card-3 work-card-4"
+  ;
+}
+
+}
+/* 750px Responsive */
+
+/* HERO CONTAINER */
+@media (max-width: 750px){
+.works-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "work-card-1"
+  "work-card-2"
+  "work-card-3" 
+  "work-card-4"
+  ;
+}
 }
 
 /* 400px Responsive */

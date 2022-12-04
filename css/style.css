@@ -157,8 +157,6 @@ a {
 }
 .page-section{
   min-height:100vh ;
-/*TODO: delete border  */
-  border: 1px solid yellow;
   overflow: hidden;
   position: relative;
 }
@@ -327,5 +325,10 @@ a {
 
 .row input[type="submit"]:hover{
   scale: 1.2;
+}
 
+/* FOOTER */
+footer{
+  text-align: center;
+  margin: 20px;
 }
